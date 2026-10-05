@@ -6,6 +6,9 @@ The device passively monitors WiFi activity, converts captured 802.11 frames int
 
 Jev evaluates the telemetry and returns structured decisions about coverage, congestion and possible network optimization.
 
+<img width="1280" height="724" alt="Screen2" src="https://github.com/user-attachments/assets/4b7a89c6-9767-410b-bb8f-e7d055234233" />
+
+
 ## Features
 
 - Passive WiFi monitoring
