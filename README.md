@@ -23,7 +23,7 @@ Jev evaluates the telemetry and returns structured decisions about coverage, con
 
 ## Hardware
 
-- ZimaBoard 2
+- [ZimaBoard 2] (https://shop.zimaspace.com?sca_ref=12384820.5O0Okp5fhsjM&utm_source=roni-bandini&utm_medium=affiliate&utm_campaign=zimaspace_affiliate&utm_content=Roni-Bandini)
 - Alfa AWUS036H
 - 16 GB USB flash drive
 - HDMI monitor
