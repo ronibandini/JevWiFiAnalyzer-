@@ -324,6 +324,10 @@ RSSI is measured at the Alfa adapter and represents the signal observed at the s
 
 The project uses sequential channel hopping, so channels are not monitored simultaneously.
 
+## Demo
+
+https://www.youtube.com/watch?v=VluRIPXSZjU
+
 ## References
 
 - Jev / TypeSafe: https://typesafe.ai/blog/introducing-system-one-models-and-jev
