@@ -6,22 +6,17 @@ The device passively monitors WiFi activity, converts captured 802.11 frames int
 
 Jev evaluates the telemetry and returns structured decisions about coverage, congestion and possible network optimization.
 
-<img width="1280" height="724" alt="Screen2" src="https://github.com/user-attachments/assets/4b7a89c6-9767-410b-bb8f-e7d055234233" />
+<img width="2710" height="1544" alt="Run1" src="https://github.com/user-attachments/assets/f3e6b2ed-4cad-4519-8eef-729590cc82c6" />
 
 
 ## Features
 
 - Passive WiFi monitoring
 - 2.4 GHz channel scanning
-- Monitor-mode capture
-- Sequential channel hopping
 - Frames/sec measurement
 - Access point detection
 - RSSI statistics
 - Observed client counting
-- Terminal-based live dashboard
-- Structured Jev analysis
-- JSON measurement exports
 - Configurable channels and measurement windows
 
 ## Hardware
@@ -78,11 +73,8 @@ Create an API key at:
 
 https://openrouter.ai/workspaces/default/keys
 
-Set it as an environment variable or edit the Python file.
+Configure inside scan.py
 
-```bash
-export OPENROUTER_API_KEY="your-api-key"
-```
 
 ## Running the analyzer
 
@@ -138,11 +130,9 @@ RSSI mean/min/max
 active clients
 ```
 
-Client counts represent clients observed in captured traffic, not necessarily every associated client.
-
 ## Jev integration
 
-Raw WiFi frames are not sent to Jev. The ZimaBoard creates a structured state containing:
+Scan creates a structured state containing:
 
 ```text
 channelsScanned
@@ -151,15 +141,7 @@ accessPointsDetected
 measurementWindowSeconds
 ```
 
-The current implementation sends this state to the OpenRouter Decisions API:
-
-https://openrouter.ai/api/alpha/decisions
-
-using:
-
-```text
-~typesafe/jev-latest
-```
+This information is sent to Jev AI through OpenRouter using ~typesafe/jev-latest
 
 The architecture is:
 
